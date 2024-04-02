@@ -1,0 +1,9 @@
+node("class5") {
+    stage("clone") {
+        git branch: 'main', url: 'https://github.com/AlonAF800/class_7'
+    }
+    stage("execute") {
+        sh "ls -l"
+        sh "python3 Main.py"
+    }
+}
