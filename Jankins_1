@@ -1,7 +1,7 @@
 properties([pipelineTriggers([pollSCM('* * * * * ')])])
 node("class5") {
     stage("clone") {
-        git branch: 'main', url: 'https://github.com/AlonAF800/class_7'
+        git branch: 'devleop', url: 'https://github.com/AlonAF800/class_7'
     }
     stage("execute") {
         sh "ls -l"
